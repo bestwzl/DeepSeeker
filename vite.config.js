@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [vue()],
   server: { // Vite 的代理配置语法与常见的 Webpack 或 Vue CLI 略有不同。 后两者不需要 server:{}
     proxy: {
